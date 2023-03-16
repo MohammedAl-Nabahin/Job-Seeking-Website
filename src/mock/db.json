@@ -1,0 +1,640 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "moh",
+      "lastname": "n",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "firstname": "moh",
+      "lastname": "n",
+      "password": "password456"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Develop a website for our non-profit organization",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "4 days ago",
+      "info": "We need a website that showcases our non-profit organization's mission, goals, and achievements. The website should be visually appealing, responsive, and easy to navigate.",
+      "topics": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "API Integration"
+      ],
+      "proposals": "8+",
+      "payment": "Payment verified",
+      "location": "Australia",
+      "createdAt": "2023, 03 , 12 , 12:00 PM"
+    },
+    {
+      "id": 2,
+      "title": "Design a logo for our startup",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "1 week ago",
+      "info": "We're a new startup and we need a logo that reflects our brand identity. The logo should be simple, memorable, and professional.",
+      "topics": [
+        " Logo Design ",
+        " Adobe Illustrator ",
+        " Graphic Design "
+      ],
+      "proposals": "10+",
+      "payment": "Payment verified",
+      "location": "Palestine",
+      "createdAt": "2023 , 03 , 08 , 12:00 PM"
+    },
+    {
+      "id": 3,
+      "title": "Write and edit content for our website",
+      "price": "Hourly",
+      "level": "Entry",
+      "posted": "3 days ago",
+      "info": "We're looking for a talented writer who can create engaging content for our website. The content should be SEO-friendly and easy to read.",
+      "topics": [
+        "Copywriting",
+        "SEO",
+        "WordPress",
+        "Google Analytics"
+      ],
+      "proposals": "20+",
+      "payment": "Payment verified",
+      "location": "UK",
+      "createdAt": "March 12, 2023, 12:00 PM"
+    },
+    {
+      "id": 4,
+      "title": "Build and Design landing page for my business.",
+      "price": "Fixed-price",
+      "level": "intermediate",
+      "posted": "20 hours ago",
+      "info": "Hi, I am looking for a cyber anonymity expert who can guide regarding the ways to protect identity online. The consultant must have knowledge of the latest technologies",
+      "topics": [
+        "HTML ",
+        " CSS",
+        " JavaScript ",
+        " React ",
+        " Json server "
+      ],
+      "proposals": "25+",
+      "payment": "Payment verified",
+      "location": "UK",
+      "createdAt": "March 14, 2023, 4:00 PM"
+    },
+    {
+      "id": 5,
+      "title": "Create a social media marketing plan for our beauty brand",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "1 week ago",
+      "info": "We're a beauty brand looking to increase our social media presence. We need a marketing plan that includes strategies for Instagram, Facebook, and TikTok.",
+      "topics": [
+        "Social Media Marchketing",
+        "Instagram",
+        "Facebook",
+        "TikTok"
+      ],
+      "proposals": "12+",
+      "payment": "Payment verified",
+      "location": "USA",
+      "createdAt": "2023 , 03 , 08 , 12:00 PM"
+    },
+    {
+      "id": 6,
+      "title": "Develop a chatbot for our customer service",
+      "price": "Hourly",
+      "level": "Expert",
+      "posted": "2 days ago",
+      "info": "We need a chatbot that can handle basic customer service inquiries and redirect complex issues to our human representatives. The chatbot should be smart, reliable, and user-friendly.",
+      "topics": [
+        "Chatbot Development",
+        "Natural Language Processing",
+        "Machine Learning"
+      ],
+      "proposals": "10+",
+      "payment": "Payment verified",
+      "location": "India",
+      "createdAt": "March 13, 2023, 12:00 PM"
+    },
+    {
+      "id": 7,
+      "title": "Design and develop a game for iOS and Android",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "1 week ago",
+      "info": "We're looking for a game developer who can create a fun and engaging game for iOS and Android. The game should have great graphics, sound effects, and gameplay.",
+      "topics": [
+        "Unity",
+        "Game Development",
+        "2D Graphics"
+      ],
+      "proposals": "5+",
+      "payment": "Payment verified",
+      "location": "Canada",
+      "createdAt": "2023 , 03 ,  08 , 05:00 PM"
+    },
+    {
+      "id": 8,
+      "title": "Develop a machine learning model for image recognition",
+      "price": "Hourly",
+      "level": "Expert",
+      "posted": "3 days ago",
+      "info": "We need a machine learning expert who can develop a model for image recognition. The model should be accurate and scalable.",
+      "topics": [
+        "Machine Learning",
+        "Python",
+        "TensorFlow",
+        "Image Processing"
+      ],
+      "proposals": "7+",
+      "payment": "Payment verified",
+      "location": "USA",
+      "createdAt": "March 12, 2023, 12:00 PM"
+    },
+    {
+      "id": 9,
+      "title": "Design and develop a responsive email template",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "4 days ago",
+      "info": "We need a responsive email template that looks great on all devices. The template should be easy to use and customizable.",
+      "topics": [
+        "Email Marchketing",
+        "HTML",
+        "CSS"
+      ],
+      "proposals": "9+",
+      "payment": "Payment verified",
+      "location": "Australia",
+      "createdAt": "2023, 03 , 12, 12:00 PM"
+    },
+    {
+      "id": 10,
+      "title": "Create a 3D model of our product for marketing purposes",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "1 week ago",
+      "info": "We're a product-based company looking to create a 3D model of our product for marketing purposes. The model should be realistic and detailed.",
+      "topics": [
+        "3D Modeling",
+        "Blender",
+        "Product Visualization"
+      ],
+      "proposals": "8+",
+      "payment": "Payment verified",
+      "location": "UK",
+      "createdAt": "2023 , 03 ,  08 , 05:00 PM"
+    },
+    {
+      "id": 11,
+      "title": "Develop a secure payment gateway for our e-commerce platform",
+      "price": "Hourly",
+      "level": "Expert",
+      "posted": "2 days ago",
+      "info": "We need a payment gateway that is secure and reliable for our e-commerce platform. The gateway should be easy to integrate and support multiple payment methods.",
+      "topics": [
+        "Payment Gateway Integration",
+        "Security",
+        "API Development"
+      ],
+      "proposals": "6+",
+      "payment": "Payment unverified",
+      "location": "USA",
+      "createdAt": "March 13, 2023, 12:00 PM"
+    },
+    {
+      "id": 12,
+      "title": "Write and edit content for our blog",
+      "price": "Hourly",
+      "level": "Entry",
+      "posted": "3 days ago",
+      "info": "We're looking for a writer who can create high-quality blog posts on a variety of topics. The posts should be informative, engaging, and SEO-friendly.",
+      "topics": [
+        "Content Writing",
+        "SEO",
+        "WordPress",
+        "Google Analytics"
+      ],
+      "proposals": "15+",
+      "payment": "Payment unverified",
+      "location": "India",
+      "createdAt": "March 12, 2023, 12:00 PM"
+    },
+    {
+      "id": 13,
+      "title": "Develop a mobile app for our fitness startup",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "5 days ago",
+      "info": "We're looking for an experienced mobile app developer who can create a fitness app for our startup. The app should have a great user interface and offer features like workout tracking and meal planning.",
+      "topics": [
+        "Mobile App Development",
+        "React Native",
+        "Firebase"
+      ],
+      "proposals": "12+",
+      "payment": "Payment unverified",
+      "location": "Australia",
+      "createdAt": "2023 , 03 , 10 , 12:00 PM"
+    },
+    {
+      "id": 14,
+      "title": "Design and develop a responsive website for our travel agency",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "1 week ago",
+      "info": "We need a website that showcases our travel packages and offers online booking. The website should be responsive, user-friendly, and SEO-friendly.",
+      "topics": [
+        "Web Design",
+        "WordPress",
+        "SEO",
+        "Online Booking"
+      ],
+      "proposals": "7+",
+      "payment": "Payment unverified",
+      "location": "Canada",
+      "createdAt": "2023 , 03 ,  08 , 05:00 PM"
+    },
+    {
+      "id": 15,
+      "title": "Create a blockchain-based solution for supply chain management",
+      "price": "Hourly",
+      "level": "Expert",
+      "posted": "2 weeks ago",
+      "info": "We're looking for a blockchain developer who can develop a solution for supply chain management. The solution should be secure, transparent, and scalable.",
+      "topics": [
+        "Blockchain",
+        "Smart Contracts",
+        "Ethereum",
+        "Supply Chain Management"
+      ],
+      "proposals": "4+",
+      "payment": "Payment verified",
+      "location": "USA",
+      "createdAt": "2023 , 03 ,  01 , 12:00 PM"
+    },
+    {
+      "id": 16,
+      "title": "Create a logo and branding for our new startup",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "4 days ago",
+      "info": "We're a new startup looking for a logo and branding that reflects our values and mission. The logo and branding should be memorable and professional.",
+      "topics": [
+        "Logo Design",
+        "Brand Identity",
+        "Graphic Design"
+      ],
+      "proposals": "10+",
+      "payment": "Payment unverified",
+      "location": "UK",
+      "createdAt": "2023, 03 , 12, 12:00 PM"
+    },
+    {
+      "id": 17,
+      "title": "Develop a custom WordPress plugin",
+      "price": "Hourly",
+      "level": "Expert",
+      "posted": "1 week ago",
+      "info": "We need a custom WordPress plugin that adds functionality to our website. The plugin should be well-documented and easy to use.",
+      "topics": [
+        "WordPress",
+        "Plugin Development",
+        "PHP",
+        "MySQL"
+      ],
+      "proposals": "8+",
+      "payment": "Payment verified",
+      "location": "Australia",
+      "createdAt": "2023 , 03 ,  08 , 05:00 PM"
+    },
+    {
+      "id": 18,
+      "title": "Design and develop an e-learning platform",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "2 weeks ago",
+      "info": "We need an e-learning platform that offers courses on a variety of topics. The platform should have great user experience and offer features like video conferencing and quizzes.",
+      "topics": [
+        "E-Learning",
+        "LMS",
+        "Moodle",
+        "Video Conferencing"
+      ],
+      "proposals": "6+",
+      "payment": "Payment verified",
+      "location": "USA",
+      "createdAt": "2023 , 03 ,  01 , 12:00 PM"
+    },
+    {
+      "id": 19,
+      "title": "Build a chatbot for our customer service",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "3 days ago",
+      "info": "We need a chatbot that can answer common customer queries and escalate issues to our customer support team. The chatbot should be able to learn and improve over time.",
+      "topics": [
+        "Chatbot Development",
+        "Natural Language Processing",
+        "AI",
+        "Python"
+      ],
+      "proposals": "11+",
+      "payment": "Payment verified",
+      "location": "UK",
+      "createdAt": "March 12, 2023, 12:00 PM"
+    },
+    {
+      "id": 20,
+      "title": "Create a social media marketing campaign for our product launch",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "1 week ago",
+      "info": "We're launching a new product and need a social media marketing campaign to create buzz and drive sales. The campaign should include content creation and ad targeting.",
+      "topics": [
+        "Social Media Marchketing",
+        "Content Creation",
+        "Facebook Ads",
+        "Instagram Ads"
+      ],
+      "proposals": "9+",
+      "payment": "Payment verified",
+      "location": "Canada",
+      "createdAt": "2023 , 03 ,  08 , 05:00 PM"
+    },
+    {
+      "id": 21,
+      "title": "Design and develop a responsive website for a restaurant",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "2 days ago",
+      "info": "We need a website that showcases our menu, offers online ordering, and allows customers to make reservations. The website should be responsive and user-friendly.",
+      "topics": [
+        "Web Design",
+        "WordPress",
+        "Online Ordering",
+        "Reservation System"
+      ],
+      "proposals": "13+",
+      "payment": "Payment verified",
+      "location": "USA",
+      "createdAt": "March 13, 2023, 12:00 PM"
+    },
+    {
+      "id": 22,
+      "title": "Develop a mobile app for our e-commerce store",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "4 days ago",
+      "info": "We're looking for an experienced mobile app developer who can create an app for our e-commerce store. The app should have a great user interface and offer features like push notifications and in-app purchases.",
+      "topics": [
+        "Mobile App Development",
+        "React Native",
+        "Firebase",
+        "In-App Purchases"
+      ],
+      "proposals": "8+",
+      "payment": "Payment verified",
+      "location": "Australia",
+      "createdAt": "2023, 03 , 12, 12:00 PM"
+    },
+    {
+      "id": 23,
+      "title": "Build a custom CRM system for our sales team",
+      "price": "Hourly",
+      "level": "Expert",
+      "posted": "1 week ago",
+      "info": "We need a custom CRM system that can handle our sales pipeline and customer data. The system should be scalable and customizable.",
+      "topics": [
+        "CRM",
+        "Sales Management",
+        "MySQL",
+        "PHP"
+      ],
+      "proposals": "5+",
+      "payment": "Payment verified",
+      "location": "UK",
+      "createdAt": "2023 , 03 ,  08 , 05:00 PM"
+    },
+    {
+      "id": 24,
+      "title": "Create an animated explainer video for our product",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "3 days ago",
+      "info": "We need an animated explainer video that showcases the features and benefits of our product. The video should be engaging and informative.",
+      "topics": [
+        "Video Production",
+        "Animation",
+        "Scriptwriting"
+      ],
+      "proposals": "10+",
+      "payment": "Payment verified",
+      "location": "Palestine",
+      "createdAt": "March 12, 2023, 12:00 PM"
+    },
+    {
+      "id": 25,
+      "title": "Design a logo and brand identity for a new startup",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "1 week ago",
+      "info": "We need a logo and brand identity that reflects our startup's values and mission. The designer should be able to create a unique and memorable brand identity.",
+      "topics": [
+        "Graphic Design",
+        "Brand Identity",
+        "Logo Design"
+      ],
+      "proposals": "7+",
+      "payment": "Payment verified",
+      "location": "Canada",
+      "createdAt": "2023 , 03 ,  08 , 05:00 PM"
+    },
+    {
+      "id": 26,
+      "title": "Write and publish an e-book on a self-help topic",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "2 days ago",
+      "info": "We need an experienced writer who can research and write an e-book on a self-help topic. The writer should also be able to publish the e-book on major platforms like Amazon Kindle.",
+      "topics": [
+        "Writing",
+        "E-book Publishing",
+        "Self-Help"
+      ],
+      "proposals": "9+",
+      "payment": "Payment verified",
+      "location": "USA",
+      "createdAt": "March 13, 2023, 12:00 PM"
+    },
+    {
+      "id": 27,
+      "title": "Develop an e-learning platform for language learning",
+      "price": "Hourly",
+      "level": "Expert",
+      "posted": "1 week ago",
+      "info": "We need an e-learning platform that offers language courses to users. The platform should have features like video lessons, quizzes, and progress tracking.",
+      "topics": [
+        "Web Development",
+        "E-learning",
+        "Video Production",
+        "Language Learning"
+      ],
+      "proposals": "6+",
+      "payment": "Payment verified",
+      "location": "Australia",
+      "createdAt": "2023 , 03 ,  08 , 05:00 PM"
+    },
+    {
+      "id": 28,
+      "title": "Create a marketing strategy for a new product launch",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "3 days ago",
+      "info": "We're launching a new product and need a marketing strategy that includes digital advertising, content marketing, and influencer outreach.",
+      "topics": [
+        "Marchketing Strategy ",
+        " Digital Advertising ",
+        " Content Marchketing ",
+        " Influencer Marchketing "
+      ],
+      "proposals": "12+",
+      "payment": "Payment verified",
+      "location": "UK",
+      "createdAt": "March 12, 2023, 12:00 PM"
+    },
+    {
+      "id": 29,
+      "title": "Build a website for a nonprofit organization",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "4 days ago",
+      "info": "We need a website that showcases our mission and programs and allows users to donate online. The website should be easy to navigate and mobile-friendly.",
+      "topics": [
+        "Web Development",
+        "WordPress",
+        "Donation System",
+        "Nonprofit"
+      ],
+      "proposals": "8+",
+      "payment": "Payment verified",
+      "location": "USA",
+      "createdAt": "2023, 03 , 12, 12:00 PM"
+    },
+    {
+      "id": 30,
+      "title": "Create a virtual reality experience for a museum exhibit",
+      "price": "Hourly",
+      "level": "Expert",
+      "posted": "1 week ago",
+      "info": "We need a virtual reality experience that enhances our museum exhibit and engages visitors. The experience should be educational and immersive.",
+      "topics": [
+        "Virtual Reality",
+        "Game Development",
+        "3D Modeling"
+      ],
+      "proposals": "5+",
+      "payment": "Payment verified",
+      "location": "Palestine",
+      "createdAt": "2023 , 03 ,  08 , 05:00 PM"
+    }
+  ],
+  "savedJobs": [
+    {
+      "id": 2,
+      "title": "Design a logo for our startup",
+      "price": "Fixed-price",
+      "level": "Intermediate",
+      "posted": "1 week ago",
+      "info": "We're a new startup and we need a logo that reflects our brand identity. The logo should be simple, memorable, and professional.",
+      "topics": [
+        " Logo Design ",
+        " Adobe Illustrator ",
+        " Graphic Design "
+      ],
+      "proposals": "10+",
+      "payment": "Payment verified",
+      "location": "Palestine",
+      "createdAt": "2023 , 03 , 08 , 12:00 PM"
+    },
+    {
+      "id": 1,
+      "title": "Develop a website for our non-profit organization",
+      "price": "Fixed-price",
+      "level": "Expert",
+      "posted": "4 days ago",
+      "info": "We need a website that showcases our non-profit organization's mission, goals, and achievements. The website should be visually appealing, responsive, and easy to navigate.",
+      "topics": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "API Integration"
+      ],
+      "proposals": "8+",
+      "payment": "Payment verified",
+      "location": "Australia",
+      "createdAt": "2023, 03 , 12 , 12:00 PM"
+    },
+    {
+      "id": 3,
+      "title": "Write and edit content for our website",
+      "price": "Hourly",
+      "level": "Entry",
+      "posted": "3 days ago",
+      "info": "We're looking for a talented writer who can create engaging content for our website. The content should be SEO-friendly and easy to read.",
+      "topics": [
+        "Copywriting",
+        "SEO",
+        "WordPress",
+        "Google Analytics"
+      ],
+      "proposals": "20+",
+      "payment": "Payment verified",
+      "location": "UK",
+      "createdAt": "March 12, 2023, 12:00 PM"
+    },
+    {
+      "id": 4,
+      "title": "Build and Design landing page for my business.",
+      "price": "Fixed-price",
+      "level": "intermediate",
+      "posted": "20 hours ago",
+      "info": "Hi, I am looking for a cyber anonymity expert who can guide regarding the ways to protect identity online. The consultant must have knowledge of the latest technologies",
+      "topics": [
+        "HTML ",
+        " CSS",
+        " JavaScript ",
+        " React ",
+        " Json server "
+      ],
+      "proposals": "25+",
+      "payment": "Payment verified",
+      "location": "UK",
+      "createdAt": "March 14, 2023, 4:00 PM"
+    },
+    {
+      "id": 6,
+      "title": "Develop a chatbot for our customer service",
+      "price": "Hourly",
+      "level": "Expert",
+      "posted": "2 days ago",
+      "info": "We need a chatbot that can handle basic customer service inquiries and redirect complex issues to our human representatives. The chatbot should be smart, reliable, and user-friendly.",
+      "topics": [
+        "Chatbot Development",
+        "Natural Language Processing",
+        "Machine Learning"
+      ],
+      "proposals": "10+",
+      "payment": "Payment verified",
+      "location": "India",
+      "createdAt": "March 13, 2023, 12:00 PM"
+    }
+  ]
+}
