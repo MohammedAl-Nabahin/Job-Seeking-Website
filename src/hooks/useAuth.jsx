@@ -7,22 +7,26 @@ const useAuth = () => {
   const [token, setToken] = useState("");
   const navigate = useNavigate()
 
+  
   const logout = () => {
     localStorage.clear();
     setAuthorized(false);
   };
 
   const login = () => {
-    setAuthorized(true);
-    navigate('/')
-  };
-
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (token) {
       setAuthorized(true);
+  };
+  
+  useEffect(() => {   
+    if (localStorage.getItem("token")) {
+     setAuthorized(true);
     }
-  }, []);
+      if(authorized){
+       navigate('/')
+      }
+     
+    
+  }, [authorized]);
 
   return {
     authorized,

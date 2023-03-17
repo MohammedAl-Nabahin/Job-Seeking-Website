@@ -2,19 +2,30 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { useNavigate } from 'react-router-dom';
 
 //image
 import avatar from '../../assets/images/avatar.jpg';
+import { useAuthContext } from '../../contexts/AuthContext';
 
 export default function Avatar() {
+  const navigate = useNavigate();
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  const {logout} = useAuthContext();
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const bye= ()=>{
+    logout();
+  }
+  const goToProfile = () =>{
+    navigate('/profile')
+  } 
 
   return (
     <div style={{padding:0 , margin:0 , width:'35px' , marginRight:'5px' , marginLeft:'-10px'}}>
@@ -43,8 +54,8 @@ export default function Avatar() {
             horizontal: 'left',
             }}
         >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            <MenuItem onClick={goToProfile}>Profile</MenuItem>
+            <MenuItem onClick={bye}>Logout</MenuItem>
         </Menu>
     </div>
   );

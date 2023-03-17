@@ -4,8 +4,8 @@ import axios from 'axios';
 import {API_URL} from '../../../../config/api';
 import Circular from '../../../../components/Progress';
 import JobCard from '../JobCard/Index';
-import SkillTag from '../SkillTag/Index';
-import { useJobContext } from '../../../../contexts/JobContext';
+// import SkillTag from '../SkillTag/Index';
+// import { useJobContext } from '../../../../contexts/JobContext';
 import { MdWorkHistory } from 'react-icons/md';
 
 

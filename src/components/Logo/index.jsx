@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // const styled = lazy(()=> {import ('styled-components')});
 import styled from 'styled-components';
@@ -15,7 +16,9 @@ const Logo = styled.h2`
 function index() {
   return (
     <Logo>
+      <Link to={'/'} style={{textDecoration:'none'}}>
         Pluto
+      </Link>
     </Logo>
   )
 }

@@ -10,6 +10,8 @@ import Logo from '../Logo';
 import { Header , Box } from './style';
 import Avatar from '../Avatar';
 
+ 
+
 function Index() {
   return (
     <Header>

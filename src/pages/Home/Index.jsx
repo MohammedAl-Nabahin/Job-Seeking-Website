@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
 import Jobs from './Components/JobContainer/Index';
 // import JobCon from './Components/JobContainer/Index'
@@ -9,9 +9,11 @@ function Index() {
   return (
     <div style={{display:'flex' , flexDirection:'row' , width:'100%' , gap:'1em'}}>
       <div style={{ width:"70%" , height:'100%'}}>
-        <Welcome/>
-        <SearchBar/>
-        <Jobs/>
+        <Suspense fallback={<h4>Loading</h4>}>
+          <Welcome/>
+          <SearchBar/>
+          <Jobs/>
+        </Suspense>
       </div>
       
       <Aside/>

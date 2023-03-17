@@ -8,7 +8,8 @@ export const FooterBox = styled.div`
     justify-content: center;
     align-items: center;
     margin: auto;
-    /* margin-top: auto; */
+    align-self: 0;
+    margin-top: 15em;
     /* margin-bottom: 0; */
     position: relative;
     bottom: 0;

@@ -71,8 +71,8 @@ function Index({job  , onBlur}) {
     const navigate = useNavigate();
 
     const back = () =>{
-        navigate('/home');
-
+        // navigate('/home');
+        navigate('/');
     }
   const flip =()=>{
       saved === true ?  setSaved(false)  :  setSaved(true);
@@ -111,7 +111,7 @@ const {
             <DataBox>
                 <h1>{singleJob.title}</h1>
                 <h3 style={{color:'darkblue'}}>{singleJob?.topics?.map((item , index)=>
-                <span key={index}><div>{item}</div></span>
+                <span><div key={index}>{item}</div></span>
                 )}</h3>
                 <p>{singleJob.posted}</p>
                 <span style={{display:'flex' , justifyContent:'center' , alignItems:'center'}}><MdLocationOn/>{singleJob.location}</span>
