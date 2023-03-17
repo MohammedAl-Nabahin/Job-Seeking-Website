@@ -2,16 +2,18 @@ import React, { lazy, Suspense } from 'react';
 
 //components
 import UnAuthHeader from '../../components/UnAuthHeader';
-const SignUpForm = lazy(()=>import('./Form'));
-const Spinner = lazy(()=>import('../../components/Spinner'));
+import SignUpForm from './Form';
+import Spinner  from '../../components/Spinner';
 
 
 function Index() {
   return (
-    <div>
+    <div style={{width:'100%' ,display:'flex' , alignItems:'center' , height:'100%' ,margin:'6em auto'}}>
       <UnAuthHeader/>
       <Suspense fallback={<Spinner/>}>
-        <SignUpForm/>
+        <div style={{width:'40%' , margin:'auto'}}>
+          <SignUpForm/>
+        </div>
       </Suspense>
     </div>
   )

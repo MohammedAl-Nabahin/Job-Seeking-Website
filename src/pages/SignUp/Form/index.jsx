@@ -32,9 +32,9 @@ import axios from 'axios';
 
 const Index = () => {
   const { loading, setLoading, setToken, login } = useAuthContext();
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
  const initialValues={
-    firstName: "",
+    name: "",
     lastName: "",
     email: "",
     country: "",
@@ -42,9 +42,9 @@ const Index = () => {
     checkbox: false,
   }
 
-  // const
+  // const name = 
 
-  const onSubmit = async ({ name, email, password }) => {
+  const onSubmit = async ({name, email, password }) => {
     setLoading(true);
     const res = await axios
       .post(`https://react-tt-api.onrender.com/api/users/signup`, { email, password, name })
@@ -54,6 +54,7 @@ const Index = () => {
       .finally(() => setLoading(false));
 
     if (res) {
+      console.log(res)
       setToken(res.data.token);
       localStorage.setItem("token", res.data.token);
       login();
@@ -108,7 +109,7 @@ const Index = () => {
               <Grid sx={{display:'flex' , flexDirection:'row' , gap:'1em'}} className="myGrid">
               <Grid item xs={6}>
                     <TextField
-                          name="firstName"
+                          name="name"
                           placeholder="First Name"
                           className='giveMeBorder'
                           value={formik.values.firstName}

@@ -5,6 +5,7 @@ const LogInForm = styled.div`
  
     margin: auto;
     margin-top: 130px;
+    margin-bottom: 5em;
     display: flex;
     text-align: center;
     width:550px;

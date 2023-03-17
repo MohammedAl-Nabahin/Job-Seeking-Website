@@ -7,10 +7,10 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-import AllJobs from '../Home/Components/Jobs'
+// import AllJobs from '../Home/Components/Jobs'
 // import Recent from '../Home/Components/MostRecent'
 import SavedJobs from '../Home/Components/SavedJobs/Index';
-import { padding } from '@mui/system';
+// import { padding } from '@mui/system';
 import SearchBar from '../Home/Components/SearchBar/Index'
 import { useSearchParams } from 'react-router-dom';
 import axios from 'axios';
@@ -23,7 +23,7 @@ import JobCard from '../Home/Components/JobCard/Index';
 
 function Index() {
 
-
+    
     const [searchparams] = useSearchParams();
 
     const query = searchparams.get("search")

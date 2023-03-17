@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { Link } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 import { TextField, Button , Typography } from '@mui/material';
@@ -18,8 +18,9 @@ import axios from 'axios';
 
 
 function Index() {
-  const { loading, setLoading, setToken, login } = useAuthContext();
+  const { loading, setLoading, setToken, login  , authorized} = useAuthContext();
   const [errors,setError]=useState();
+  // const navigate = useNavigate()
 
 
     
@@ -40,8 +41,12 @@ const onSubmit = async ({ email, password }) => {
     .finally(() => setLoading(false));
 
   if (res) {
-    setToken(res.data.token);
-    localStorage.setItem("token", res.data.token);
+    console.log(res)
+     const token = res.data.token;
+     const name = res.data.name;
+      localStorage.setItem("token", token);
+      localStorage.setItem("name" , name);
+    setToken(token);
     login();
   }
 };
