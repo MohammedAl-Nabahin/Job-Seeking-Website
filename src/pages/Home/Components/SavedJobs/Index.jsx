@@ -14,45 +14,48 @@ function Index() {
     const [errors, setError] = useState("");
     const [isLoading, setIsLoading] = useState(false)
 
-    // const getSavedJobs= async ()=>{
-    //     setIsLoading(true)
-    //     try {
-    //       // const response = await axios.get(`http://localhost:3000/jobs?_limit=10`)
-    //       const response = await axios.get(/*env */ `${API_URL}savedJobs`)
-    //       console.log(response)
-    //       if (response) {
-    //         setSavedJobs(response.data)
-    //       }else{
-    //         throw new Error("Sorry something went wrong")
-    //       }
-    //     } catch (error) {
-    //       setError(error.message)
-    //     }finally{
-    //       setIsLoading(false)
-    //     }
-    //   }
+    const getSavedJobs= async ()=>{
+        setIsLoading(true)
+        try {
+          const response = await axios.get(/*env */ `${API_URL}savedJobs`)
+          // console.log(response)
+          if (response) {
+            setSavedJobs(response.data)
+          }else{
+            throw new Error("Sorry something went wrong")
+          }
+        } catch (error) {
+          setError(error.message)
+        }finally{
+          setIsLoading(false)
+        }
+      }
     
-    // useEffect(() => {
-    //   getSavedJobs()
-    //   }, [])
-  const { state } = useJobContext();
+    useEffect(() => {
+      getSavedJobs()
+      }, [])
+  // const { state } = useJobContext();
 
   return (
     <div style={{width:"100%"}}>
-    <div style={{width:'92.6%'}}> 
-
-      
+    <div style={{width:'92.6%'}}>       
         {errors && <p>{errors}</p>} 
+        {saved.length===0  ? 'No Jobs Saved' : <h3 style={{marginLeft:'2em'}}>|{saved.length}|</h3>}
         {isLoading && <Circular/>} 
 
-        {!state.jobs.length && 'No Jobs Saved'}
 
-        {
+        {/* {
        state?.jobs?.map(job => (
               <JobCard key={job.id}
                 {...{ job }}
                 />
-                ))}
+                ))} */}
+
+        {saved?.map(job => (
+              <JobCard key={job.id}
+                {...{ job }}
+                />
+              ))}
        </div>
     </div>
   )

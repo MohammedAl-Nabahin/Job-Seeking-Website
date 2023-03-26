@@ -4,13 +4,10 @@ import axios from 'axios';
 import {API_URL} from '../../../../config/api';
 import Circular from '../../../../components/Progress';
 import JobCard from '../JobCard/Index';
-// import SkillTag from '../SkillTag/Index';
-// import { useJobContext } from '../../../../contexts/JobContext';
 import { MdWorkHistory } from 'react-icons/md';
 
 
 function Index({job}) {
-  // console.log(API_URL)
     const [alljobs, setJobs] = useState([]);
     const [errors, setError] = useState("");
     const [isLoading, setIsLoading] = useState(false)
@@ -18,9 +15,7 @@ function Index({job}) {
     const getJobs= async ()=>{
         setIsLoading(true)
         try {
-          // const response = await axios.get(`http://localhost:3000/jobs?_limit=10`)
           const response = await axios.get(/*env */ `${API_URL}jobs?_limit=20`)
-          console.log(response)
           if (response) {
             setJobs(response.data)
           }else{

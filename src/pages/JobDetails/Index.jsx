@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { Suspense, useEffect, useState } from 'react';
 import { AiOutlineHeart } from 'react-icons/ai';
-import { MdKeyboardArrowLeft, MdLocationOn, MdOutlineLink, MdOutlinePsychology, MdPriceChange } from 'react-icons/md';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { MdKeyboardArrowLeft, MdLocationOn , MdOutlinePsychology, MdPriceChange } from 'react-icons/md';
+import { useNavigate, useParams } from 'react-router-dom';
 
 import styled from 'styled-components';
 import { API_URL } from '../../config/api';
@@ -69,14 +69,11 @@ function Index({job  , onBlur}) {
     
   const [saved , setSaved] = useState(false);
     const navigate = useNavigate();
+    
 
     const back = () =>{
-        // navigate('/home');
         navigate('/');
     }
-  const flip =()=>{
-      saved === true ?  setSaved(false)  :  setSaved(true);
-  }
 
 const {
     state: { jobs },
@@ -137,7 +134,7 @@ const {
         ,alignItems:'center' ,  width:'20%' , borderRight:'1px solid #E4E4E4'}}>
             <DataBox>
                 <button style={{padding:'1em 2em' , display:'felx' , justifyContent:'center' , alignItems:'center'}}
-                onClick={()=>{toggleJob(); flip();}}
+                onClick={()=>{}}
                 >
                     <AiOutlineHeart style={{borderColor:'darkblue'}}/> Save Job
                 </button>
