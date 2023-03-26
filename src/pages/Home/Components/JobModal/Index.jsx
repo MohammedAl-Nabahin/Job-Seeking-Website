@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-import { AiOutlineHeart } from 'react-icons/ai';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 import { MdKeyboardArrowLeft, MdLocationOn, MdOutlineLink, MdOutlinePsychology, MdPriceChange } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 
 import styled from 'styled-components';
+import { API_URL } from '../../../../config/api';
 import { useJobContext } from '../../../../contexts/JobContext';
 import SkillTag from '../SkillTag/Index';
 
@@ -21,6 +23,11 @@ const JobModal = styled.div`
         align-items: center;
         justify-content: flex-start;
         z-index: 100;
+
+        span{
+            display: flex;
+            align-items: center;
+        }
 `;
 
 
@@ -58,26 +65,39 @@ function Index({job , id , onBlur}) {
 
     
   const [saved , setSaved] = useState(false);
+  const [savedJobs , setSavedJobs] = useState([]);
+
     const navigate = useNavigate();
 
 
-  const flip =()=>{
-      saved === true ?  setSaved(false)  :  setSaved(true);
-  }
+    const {
+        saveJob,
+        removeJob,
+      } = useJobContext();
+  
 
-const {
-    state: { jobs },
-    saveJob,
-    removeJob,
-  } = useJobContext();
-
-  const isExist = () => jobs.find((item) => item.id === job.id);
-
-  const toggleJob = () => {
-    // console.log("clicked")
-    isExist() ? removeJob(job.id) : saveJob(job);
-    isExist() &&  setSaved(true) 
-  };
+    const getSaved = async () => {
+        const res = await axios.get(`${API_URL}savedJobs`);
+  
+        if(res){
+          setSavedJobs(res.data);
+        }
+      }
+    
+      const isExist = () => savedJobs.find((item) => item.id === job.id);
+  
+      const change = ()=>{
+        isExist() ? setSaved(true) : setSaved(false);
+      }
+    
+      const toggleJob = () => {
+        isExist() ? removeJob(job.id) : saveJob(job);
+      };
+      
+      useEffect(()=>{
+        getSaved();
+        change()
+      },[savedJobs])
   
 
   return (
@@ -130,9 +150,9 @@ const {
             ,alignItems:'center' ,  width:'20%' , borderRight:'1px solid #E4E4E4'}}>
                 <DataBox>
                     <button style={{padding:'1em 2em' , display:'felx' , justifyContent:'center' , alignItems:'center'}}
-                    onClick={()=>{toggleJob(); flip();}}
+                    onClick={()=>{toggleJob()}}
                     >
-                        <AiOutlineHeart style={{borderColor:'darkblue'}}/> Save Job
+                    {saved ?  <span><AiFillHeart size={25}/> Saved </span> : <span><AiOutlineHeart size={25}/> Save Job</span> }
                     </button>
 
                     <button style={{padding:'1em 2.3em' , display:'felx' , justifyContent:'center' , alignItems:'center' , 

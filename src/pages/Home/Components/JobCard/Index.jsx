@@ -11,6 +11,8 @@ import { useJobContext } from '../../../../contexts/JobContext';
 
 import styled from 'styled-components';
 import { AiFillHeart, AiOutlineDislike, AiOutlineHeart } from 'react-icons/ai';
+import axios from 'axios';
+import { API_URL } from '../../../../config/api';
 
 const Save = styled.div`
     display: flex;
@@ -42,34 +44,43 @@ const Save = styled.div`
 function Index({onClick , job}) {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [savedJobs , setSavedJobs] = useState([]);
+  const [saved , setSaved] = useState(false);
 
   const openModal = ()=>{
     setIsOpen(true);
   }
 
-  const [saved , setSaved] = useState(false);
 
-    const flip =()=>{
-        saved === true ?  setSaved(false)  :  setSaved(true);
-    }
 
   const {
       state: { jobs },
       saveJob,
       removeJob,
     } = useJobContext();
+
+    const getSaved = async () => {
+      const res = await axios.get(`${API_URL}savedJobs`);
+
+      if(res){
+        setSavedJobs(res.data);
+      }
+    }
   
-    const isExist = () => jobs.find((item) => item.id === job.id);
+    const isExist = () => savedJobs.find((item) => item.id === job.id);
+
+    const change = ()=>{
+      isExist() ? setSaved(true) : setSaved(false);
+    }
   
     const toggleJob = () => {
-      // console.log("clicked")
       isExist() ? removeJob(job.id) : saveJob(job);
-      isExist() &&  setSaved(true) 
     };
     
     useEffect(()=>{
-      
-    },[])
+      getSaved();
+      change()
+    },[savedJobs])
 
   return (
     <>
@@ -79,7 +90,6 @@ function Index({onClick , job}) {
               {/* <button > */}
           <span className='myIcon' onClick={()=>{
             toggleJob()
-            flip()
           }}>  {saved ?  <AiFillHeart size={25}/> : <AiOutlineHeart size={25}/> } </span>
               {/* </button> */}
         </Save>

@@ -8,7 +8,6 @@ import Box from '@mui/material/Box';
 import AllJobs from '../Jobs'
 import Recent from '../MostRecent/Index'
 import SavedJobs from '../SavedJobs/Index';
-import { padding } from '@mui/system';
 
 
 function TabPanel(props) {
@@ -71,7 +70,9 @@ export default function Index() {
         </TabPanel>
         
         <TabPanel value={value} index={2}>
-          <SavedJobs/>
+          <React.Suspense fallback={<p>Loading....</p>}>
+            <SavedJobs/>
+          </React.Suspense>
         </TabPanel>
       </Box>
   );
